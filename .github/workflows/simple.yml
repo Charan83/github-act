@@ -19,6 +19,8 @@ jobs:  # each workflow has one or more jobs and jobs is an object
         shell: python
   run-windows-commands:
     runs-on: windows-latest
+    needs:
+      - run-shell-command
     steps:
       - name: Directory powershell
         run: Get-Location
