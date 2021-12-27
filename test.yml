@@ -1,0 +1,33 @@
+name: Rohit
+age: 28
+address: "Kista: Allevag"
+active: true
+obj:
+  key1: value
+  key2: val2
+  key3:
+    k1: v1
+    k2: v2
+array:
+  - item1
+  - item2
+  - item3
+arrwithobj:
+  - key1: val1
+    k1: v1
+  - key2: val2
+    k2: v2
+longTextWithOUTNewLines: >
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Perspiciatis ipsam labore odio ut, quaerat ducimus illum 
+  quae iusto quibusdam reprehenderit nobis et delectus saepe 
+  nesciunt! Earum in beatae, atque laudantium similique quo minima! 
+  Sapiente aliquid accusamus, rem aperiam culpa, recusandae ratione 
+  ex deleniti, sequi autem ut eveniet suscipit ipsum esse!
+longTextWithNewLines: |
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Perspiciatis ipsam labore odio ut, quaerat ducimus illum 
+  quae iusto quibusdam reprehenderit nobis et delectus saepe 
+  nesciunt! Earum in beatae, atque laudantium similique quo minima! 
+  Sapiente aliquid accusamus, rem aperiam culpa, recusandae ratione 
+  ex deleniti, sequi autem ut eveniet suscipit ipsum esse!
