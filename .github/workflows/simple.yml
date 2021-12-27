@@ -17,3 +17,11 @@ jobs:  # each workflow has one or more jobs and jobs is an object
           import platform
           print(platform.processor())
         shell: python
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Directory powershell
+        run: Get-Location
+      - name: Directory using bash on windows
+        run: pwd
+        shell: bash
