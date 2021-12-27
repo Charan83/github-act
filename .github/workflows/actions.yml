@@ -8,9 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Simple JS Action
+        id: greet # id is need to refer the step in another step
         uses: actions/hello-world-javascript-action@v1 # we can reference of branch or  commit, version(if we give major version then the latest from that version will be used)
         with: # with helps to pass inputs to the actions
           who-to-greet: Guru
       - name: Log Greeting Time
-        run: echo "{{ steps.greet.outputs.time }}"
+        run: echo "${{steps.greet.outputs.time}}"
         
