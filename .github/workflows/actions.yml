@@ -7,6 +7,10 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: List Files
+        run: |
+          pwd
+          ls
       - name: Simple JS Action
         id: greet # id is need to refer the step in another step
         uses: actions/hello-world-javascript-action@v1 # we can reference of branch or  commit, version(if we give major version then the latest from that version will be used)
